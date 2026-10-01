@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #BBDEFB;
+    color: #0D47A1;
+    line-height: 1.6; /*Espaçamento entre linhas*/
+}
+
+.cabecalho {
+    background-color: #64B5F6;
+    color: #0D47A1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navegacao {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #0D47A1;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 8px;
+    transition: color 1s ease;
+}
+
+.redes-sociais a {
+    color: #0D47A1;
+    padding-left: 8px;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+
+.menu-links a:hover {
+    color: #1976D2;
+}
+
+/*.redes-sociais a:hover {
+    color: #e05780;
+}*/ /*Caso eu queira deixar os icones das redes sociais mudando de cor.*/
+
+/*Agora, com o seguinte codigo, eu vou deixar um de cada cor.*/
+
+.redes-sociais a.whatsapp:hover {
+    color: rgb(4, 223, 0);
+}
+
+.redes-sociais a.instagram:hover {
+    color: #ff0040;
+}
+
+.redes-sociais a.facebook:hover {
+    color: #1877f2;
+}
+
+.redes-sociais a.x:hover {
+    color: #FFFFFF;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    opacity: 0.9;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texto h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px #1976D2;
+    color: #FFFFFF;
+}
+
+.texto p {
+    font-size: 16px;
+    text-shadow: 0 2px 8px #1976D2;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 900px;
+    text-align: center;
+    margin: 50px auto;
+    
+}
+
+.titulo {
+    font-size: 26px;
+    color: #0D47A1;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: #0D47A1;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto1 {
+    max-width: 420px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px; /*Não distorcer a img*/
+}
+
+.rodape {
+    background-color: #64B5F6;
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 14px;
+    margin-top: 100px;
+}
+
+.ver-destinos {
+    background-color: #0D47A1;
+    color: #BBDEFB;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    
+}
+
+.legenda {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.grade-viagens {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.internacionais {
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.nacionais {
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.passagem {
+    background-color: #0D47A1;
+    color: #BBDEFB;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.fotoa {
+    border-radius: 10px;
+}
+
+.fotob {
+    border-radius: 10px;
+}
+
+.fotoc {
+    border-radius: 10px;
+}
+
+.fotoc {
+    border-radius: 10px;
+}
+
+.fotod {
+    border-radius: 10px;
+}
+
+.fotoe {
+    border-radius: 10px;
+}
+
+.fotof {
+    border-radius: 10px;
+}
+
+.formulario {
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.compra-passagem {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.mapa-finalizar {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.tudo {
+    text-align: center;
+}
+
+.botao-voltar {
+    background-color: #0D47A1;
+    color: #BBDEFB;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 50px;
+}
+
+.sobre-nos {
+    text-align: center;
+}
+
+textarea[name="assunto"] {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
